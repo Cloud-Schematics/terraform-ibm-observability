@@ -1,4 +1,4 @@
-# Observability services
+# Observability service instance
 
 Observability services - gives you the visibility into the performance and health of your resources on IBM Cloud.  You can use these services to troubleshoot your apps and services, identify threats, detect performance issues, trigger alerts and more.  IBM Cloud offers the following observabilty services, to solve you logging and monitoring needs:
 * _IBM Cloud Activity Tracker_ - to gain insights on actions that change the state of a service in the IBM Cloud.
