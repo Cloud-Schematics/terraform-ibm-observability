@@ -6,6 +6,7 @@ data "ibm_resource_group" "rg" {
 }
 module "logdna_instance" {
   source            = "terraform-ibm-modules/observability/ibm//modules/logging-logdna"
+  version = "1.3.0"
   bind_resource_key = local.is_bind_observability_resource_key
   service_name      = local.log_analysis_name
   resource_group_id = data.ibm_resource_group.rg.id
@@ -18,6 +19,7 @@ module "logdna_instance" {
 
 module "sysdig_instance" {
   source            = "terraform-ibm-modules/observability/ibm//modules/monitoring-sysdig"
+    version = "1.3.0"
   bind_resource_key = local.is_bind_observability_resource_key
   service_name      = local.sysdig_name
   resource_group_id = data.ibm_resource_group.rg.id
@@ -32,6 +34,7 @@ module "sysdig_instance" {
 
 module "activity_tracker_instance" {
   source            = "terraform-ibm-modules/observability/ibm//modules/activity-tracker-logdna"
+version = "1.3.0"
   service_name      = local.activity_tracker_name
   plan              = var.activity_tracker_service_plan
   region            = var.region
