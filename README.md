@@ -23,6 +23,7 @@ In addition, the following inputs must be provided to provision all the Observab
 | Input parameter                    | Description                                          |               | Default Value |
 |------------------------------------|------------------------------------------------------|---------------|---------------|
 | observability_resource_group_name  | Name of the resource group                           | mandatory     |               |
+| TF_VERSION  | The version of the Terraform engine that's used in the Schematics workspace.                           | mandatory     |   0.13.7            |
 | region                             | Name of the region (for example, us-south, eu-de) | mandatory     |               |
 | sysdig_service_plan         | Name of the service plan for sysdig instance, refer to http://servicedata.mybluemix.net for accurate service plan name. | mandatory
 | logdna_service_plan         | Name of the service plan for logdna instance, refer to http://servicedata.mybluemix.net for accurate service plan name. | mandatory
